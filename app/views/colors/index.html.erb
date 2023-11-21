@@ -1,19 +1,40 @@
-<!DOCTYPE html> <!--　この文章がHTML文章であることを伝える要素です。-->
-<html lang="ja"><!--言語の指定-->
-    <head><!--ページに表示されない情報(サイトの裏側の設定)-->
-        <meta charset="utf-8">
-        <title>パーソナルカラー診断スタート</title><!--ブラウザのタブのタイトルを指定-->
-    </head>
+<div class="colorpagetopback">
+    <div class="colorpagetopnihongo">
+           <h1>パーソナルカラー診断<h1>
+    </div>
 
-    <body>
-        <header>
-            <h1 class="headline">
-            <a>パーソナルカラー診断</a>
-            
-        </header>
-
-        <div class="start">
-            <h6>Are you ready?</h6>
-            <%= link_to "診断を始める", colors_new_1_path, class: "link" %>
+    <div class="colorpagetopmoji">
+    <h1>Personal color diagnosis<h1>
+    </div>
+    <br>
+    <div class="colortopharunatuakihuyu">
+    <%=image_tag 'toppagespring.png',class:'colortoppagespring'%>
+    <%=image_tag 'toppagesummer.png',class:'colortoppagesummer'%>
+    <%=image_tag 'toppageautumn.png',class:'colortoppageautumn'%>
+    <%=image_tag 'toppagewinter.png',class:'colortoppagewinter'%>
+    </div>
+    <br>
+        <div class="colorsindanzumi">
+         <h1>診断済みはこちら<h1>
         </div>
-    </body>
+
+      <div class="colorshinhtlink">
+        <div class="colorstart">
+            <%= link_to "診断を始める", colors_new_1_path%>
+        </div>
+
+        <div class="harupagehe">
+            <%= link_to "イエベ春", colors_show_1_path%>
+        </div>
+        <div class="natupagehe">
+            <%= link_to "ブルべ夏", colors_show_2_path%>
+        </div>
+        <div class="akipagehe">
+            <%= link_to "イエベ秋", colors_show_3_path%>
+        </div>
+        <div class="huyupagehe">
+            <%= link_to "ブルべ冬", colors_show_4_path%>
+        </div>
+      </div>
+        <br>
+</div>

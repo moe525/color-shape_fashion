@@ -14,6 +14,11 @@ Rails.application.routes.draw do
   get 'colors/show_3' => 'colors#show_3'
   get 'colors/show_4' => 'colors#show_4'
 
+  get 'colors/cloth_1' => 'colors#cloth_1'
+  get 'colors/cloth_2' => 'colors#cloth_2'
+  get 'colors/cloth_3' => 'colors#cloth_3'
+  get 'colors/cloth_4' => 'colors#cloth_4'
+
   get 'shapes/new_1' => 'shapes#new_1'
   get 'shapes/new_2' => 'shapes#new_2'
   get 'shapes/new_3' => 'shapes#new_3'
@@ -24,6 +29,10 @@ Rails.application.routes.draw do
   get 'shapes/show_1' => 'shapes#show_1'
   get 'shapes/show_2' => 'shapes#show_2'
   get 'shapes/show_3' => 'shapes#show_3'
+
+  get 'shapes/cloth_1' => 'shapes#cloth_1'
+  get 'shapes/cloth_2' => 'shapes#cloth_2'
+  get 'shapes/cloth_3' => 'shapes#cloth_3'
 
   get 'tops/top' => 'tops#top'
   

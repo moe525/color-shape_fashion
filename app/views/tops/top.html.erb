@@ -1,4 +1,80 @@
-骨格
+<!DOCTYPE html> 
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>CSSの練習</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+<body>
+  <header>
+   <header class="header-nav">
+   <%=image_tag 'rogo.png',class:'rogo'%>
+   <nav><%= link_to "骨格診断", shapes_path%></nav>
+   <nav><%= link_to "パーソナルカラー診断", colors_path%></nav>
+  </header>
+  
+<!--  コンテンツを一旦仮置きする  -->
+<br><br><br><br>
+    <div class="loopSlide">
+        <%=image_tag 'kansei.png',class:'kansei'%> <%=image_tag 'kansei.png',class:'kansei'%>
+    </div>
+<div class="first-block">
+    
 
-<%= link_to "骨格診断はこちらから", shapes_path %>
-<%= link_to "パーソナルカラー診断はこちらから", colors_path %>
+    <div class="topmoji">
+        <br><br><br><br>
+        <div class="topkoko">
+            <h1>骨格診断<h1>
+        </div>
+
+        <div class="topkakeru">
+            <h1>×<h1>
+        </div>
+
+        <div class="toppasonaritisindan">
+            <h1>パーソナルカラー診断<h1>
+        </div>
+
+        <div class="topde">
+            <h1>で<h1>
+        </div>
+
+        <div class="topanatano">
+            <h1>あなたの<h1>
+        </div>
+
+        <div class="topsuki">
+        <h1>好き<h1>
+        </div>
+
+        <div class="topmitukaru">
+        <h1>が見つかる！！<h1>
+        </div>
+
+
+    </div>
+
+    <%=image_tag 'mmm.png',class:'mmm'%>
+
+    <div class="topharunatuakihuyu">
+    <%=image_tag 'toppagespring.png',class:'toppagespring'%>
+    <%=image_tag 'toppagesummer.png',class:'toppagesummer'%>
+    <%=image_tag 'toppageautumn.png',class:'toppageautumn'%>
+    <%=image_tag 'toppagewinter.png',class:'toppagewinter'%>
+    </div>
+</div>
+
+    <div class="toplinkmatome">
+        <div class="toppageshapestart">
+            <%= link_to "骨格診断を始める", shapes_path%>
+        </div>
+
+        <div class="toppagecolorstart">
+            <%= link_to "パーソナルカラー診断を始める", colors_path%>
+        </div>
+    </div>
+
+  <footer>	
+    <small>© Copyright 2023 Moe Narita.</small>
+  </footer>
+
+</body>

@@ -1,19 +1,36 @@
-<!DOCTYPE html> <!--　この文章がHTML文章であることを伝える要素です。-->
-<html lang="ja"><!--言語の指定-->
-    <head><!--ページに表示されない情報(サイトの裏側の設定)-->
-        <meta charset="utf-8">
-        <title>香水診断スタート</title><!--ブラウザのタブのタイトルを指定-->
-    </head>
+<div class="kokakupagetopback">
+    <div class="kokakupagetopnihongo">
+           <h1>骨格診断<h1>
+    </div>
 
-    <body>
-        <header>
-            <h1 class="headline">
-            <a>骨格診断</a>
-            
-        </header>
+    <div class="kokakupagetopmoji">
+    <h1>Skeletal 4 classification diagnosis<h1>
+    </div>
+    <br>
+       <div class="toptop">
+          <%=image_tag 'topsutosuto.png',class:'topsutosuto'%><br>
+          <%=image_tag 'topwawa.png',class:'topwawa'%><br>
+          <%=image_tag 'topnana.png',class:'topwawa'%>
+       </div>
 
-        <div class="start">
-            <h6>Are you ready?</h6>
-            <%= link_to "診断を始める", shapes_new_1_path, class: "link" %>
+        <div class="sindanzumi">
+         <h1>診断済みはこちら<h1>
         </div>
-    </body>
+
+      <div class="shinhtlink">
+        <div class="shstart">
+            <%= link_to "診断を始める", shapes_new_1_path%>
+        </div>
+
+        <div class="sutopagehe">
+            <%= link_to "骨格ストレート", shapes_show_1_path%>
+        </div>
+        <div class="wavepagehe">
+            <%= link_to "骨格ウェーブ", shapes_show_2_path%>
+        </div>
+        <div class="napagehe">
+            <%= link_to "骨格ナチュラル", shapes_show_3_path%>
+        </div>
+      </div>
+        <br>
+</div>

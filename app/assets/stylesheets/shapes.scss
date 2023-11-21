@@ -1,8 +1,1988 @@
 // Place all the styles related to the shapes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.colorpagetopback{
+  height: 100px;
+  background-image: url("color.png");
+  background-size: cover;
+  height: 100vh;
+  width:100%;
+}
+.colorpagetopmoji {
+  margin-top: -40px;
+font-size:30px;
+  font-family: "Monotype Corsiva";
+text-align:center;
+line-height:2.95em;
+font-weight:bold;
+color: transparent;
+background: linear-gradient( 45deg,
+  #E60012 20%,
+  #F39800 30%,
+  #FFF100 40%,
+  #009944 50%,
+  #0068B7 60%,
+  #1D2088 70%,
+  #920783 80%);
+-webkit-background-clip: text;
+}
+.colorpagetopnihongo{
+font-size:50px;
+margin-left: 140px;
+text-decoration: none;
+font-family: "游明朝";
+color: #343538;
+text-shadow: 0px 2px 0px #b9b9b9, 0px 4px 0px #ababab, 0px 6px 0px #a0a0a0;
+  position: relative;
+  display: inline-block;
+}
 
-.stmodel{
-    height: 30vh;
+.colorpagetopnihongo:before, .colorpagetopnihongo:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 80px;
+  height: 15px;
+  border-top: solid 3px #444444;
+  border-bottom: solid 3px #444444;
+}
+
+.colorpagetopnihongo:before {
+  left: 0;
+  margin-left: -110px;
+}
+.colorpagetopnihongo:after {
+  right: 0;
+  margin-right: -105px;
+}
+
+.colortopharunatuakihuyu{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+.colortoppagespring{
+  width: 500px;
+  height: 300px;
+}
+.colortoppagesummer{
+  width: 500px;
+  height: 300px;
+}
+.colortoppageautumn{
+  width: 500px;
+  height: 300px;
+}
+.colortoppagewinter{
+  width: 500px;
+  height: 300px;
+}
+
+.colorsindanzumi{
+  font-size: 20px;
+  margin-left: 710px;
+  margin-top: 20px;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  color: #444444;
+}
+.colorshinhtlink{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+.colorstart{
+  text-align: center;
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  background: #ff5c5c;/*ボタン色*/
+  border-bottom: solid 4px #a43634;
+  border-radius: 3px;
+  font-size: 30px;
+  margin-left: 50px;
+}
+.colorstart:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+.colorstart a{
+  color: black;
+}
+.colorstart a:hover {
+  color: rgb(255, 255, 255);
+}
+.harupagehe{
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  background: #FFE3E8;/*ボタン色*/
+  border-bottom: solid 4px #a79497;
+  border-radius: 3px;
+  font-size: 30px;
+  margin-left: 160px;
+}
+.harupagehe:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.harupagehe a{
+  color: black;
+}
+.harupagehe a:hover {
+  color: rgb(255, 38, 241);
+}
+.natupagehe{
+  text-align: center;
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  background: #ACCEEA;/*ボタン色*/
+  border-bottom: solid 4px #748c9f;
+  border-radius: 3px;
+  font-size: 30px;
+}
+.natupagehe:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+.natupagehe a{
+  color: black;
+}
+.natupagehe a:hover {
+  color: #0007d9;
+}
+.akipagehe{
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  background: #BFDED8;/*ボタン色*/
+  border-bottom: solid 4px #6f827f;
+  border-radius: 3px;
+  font-size: 30px;
+}
+.akipagehe:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.akipagehe a{
+  color: black;
+}
+.akipagehe a:hover {
+  color: rgb(42, 134, 79);
+}
+.huyupagehe{
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  background: #deb6ff;/*ボタン色*/
+  border-bottom: solid 4px #8d73a3;
+  border-radius: 3px;
+  font-size: 30px;
+}
+.huyupagehe:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.huyupagehe a{
+  color: black;
+}
+.huyupagehe a:hover {
+  color: rgb(178, 62, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.ai{
+  font-size: 60px;
+  text-align: center;
+  margin-top: 170px;
+  font-family: "游明朝";
+}
+
+.shitumon1{
+    text-align: center;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #ec5350;/*ボタン色*/
+    border-bottom: solid 4px #a43634;
+    border-radius: 3px;
+    font-size: 30px;
+    margin-left: 220px;
+    margin-right: 60px;
+  }
+  .shitumon1:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
+  .shitumon2{
+    margin-right: 80px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    font-size: 30px;
+    margin-right: 30px;
+    margin-left: 60px;
+  }
+  .shitumon2:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
+  .shitumon1 a{
+    color: black;
+  }
+  .shitumon1 a:hover {
+    color: white;
+  }
+  .shitumon2 a{
+    color: black;
+  }
+  .shitumon2 a:hover {
+    color: white;
+  }
+
+
+.shitumonmatome1{
+  display: flex;
+  margin-top: 50px;
+}
+.shitumonmatome2{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+.shitumonmatome3{
+  display: flex;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+.shitumonmatome4{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+.shitumonmatome5{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+.shitumonmatome6{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+.shitumonmatome7{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+.back{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.ba{
+  height: 100px;
+  background-image: url("color.png");
+  background-size: cover;
+  height: 100vh;
+  width:100%;
+}
+
+
+.yellowtop{
+    width: 100%;
+}
+
+.matome{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.shindankekka{
+    margin-top: -390px;
+    margin-left: 710px;
+    font-size: 45px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+
+.tokutyo{
+    margin-top: -360px;
+    margin-left: 800px;
+    font-size: 40px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
     
+}
+.tokutyo span{
+border-bottom: dotted 7px red;
+}
+.yellowhukidashi{
+    margin-left: 480px;
+    width: 750px;
+}
+.harutaipu{
+    margin-left: 650px;
+    margin-top: -250px;
+    font-size: 30px;
+    font-size: 100px;
+    color: #ff4894;
+    font-family: "Monotype Corsiva";
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.besu{
+    margin-left: 680px;
+    font-size: 55px;
+    margin-top: 15px;
+    font-family: "游明朝";
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+    color: #343434;
+}
+.spring{
+    margin-left: 150px;
+    margin-top: -130px;
+    width: 330px;
+}
+.pinkline{
+    width:85%;
+    margin-left: 100px;
+}
+.oomoji{
+    font-size: 40px;
+    margin-left: 100px;
+    color: #F69C5E;
+    margin-top: 10px;
+    text-decoration-line: underline double;
+}
+
+.komoji{
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: -40px;
+    margin-bottom: -10px;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+    color: #444444;
+}
+.border{
+	width: 1050px;
+    height: 1200px;
+    flex-shrink: 0;
+    border: 7px solid rgba(255, 168, 0, 0.78);
+    background: #FFE9FC;
+    margin-left: 110px;
+}
+.keikou{
+    font-size: 25px;
+    text-align: center;
+    
+
+}
+.hoshi{
+    font-size: 25px;
+    margin-left: 130px;
+}
+.keikouen{
+    margin-left: 250px;
+    margin-top: 50px;
+}
+.keikouenmoji{
+    font-size: 25px;
+    margin-top: -100px;
+    margin-left: 300px;
+}
+.hutougou{
+    text-align: center;
+    margin-top: -50px;
+}
+.keikouenmigi{
+    margin-left: 645px;
+    margin-top: -110px;
+}
+.keikouenmojimigi{
+    margin-left: 695px;
+    font-size: 25px;
+    margin-top: -100px;
+
+}
+.makecolor{
+    text-align: center;
+    font-size: 25px;
+    margin-top: -165px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+    
+}
+.oranjiline{
+    margin-left: 250px;
+    width: 750px;
+    margin-top: 100px;
+}
+
+.div-equal-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:40px 0px;
+  }
+  .div-equal-box div{
+    text-align: center;
+    width:20%;
+    font-size: 30px; 
+    border-radius: 2px; 
+    border: 1px solid #444444; 
+  }
+  .eyebrow{
+    width: 200px;
+    height: 60px;
+    
+  }
+  .eyeshadow{
+    width: 100px;
+    height: 70px;
+    margin-left: 90px;
+    
+    
+  }
+  .eyeline{
+    width: 140px;
+    margin-left: 120px;
+    
+  }
+  .eye{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 65px;
+    margin-top: -30px;
+  }
+  .browen{
+    display: flex;
+    padding-left: 90px;
+    margin-top: 10px;
+  }
+  .browenmigi{
+    margin-left: 40px;
+  }
+
+  .shadowen{
+    margin-left: 180px;
+  }
+  .shadowenmigi{
+    margin-left: 150px;
+    margin-top: -105px;
+  }
+  
+  .lineen{
+    margin-left: 940px;
+    display: flex;
+    margin-top: -110px;
+  }
+  .lineenmigi{
+    margin-left: 40px;
+  }
+  .eyename{
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .eyename1{
+    margin-left: 100px;
+  }
+  .eyename2{
+    margin-left: 70px;
+  }
+  .eyenameman{
+    display: flex;
+    text-align: center;
+    margin-top: -55px;
+    margin-left: 375px;
+  }
+  .eyename3{
+    margin-left: 150px;
+  }
+  .eyename4{
+    margin-left: 85px;
+  }
+  .eyenamemmigi{
+    display: flex;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 910px;
+  }
+  .eyename5{
+    margin-left: 50px;
+  }
+  .eyename6{
+    margin-left: 55px;
+  }
+  .cheek{
+    width: 200px;
+    height: 100px;
+    
+  }
+  .nail{
+    width: 100px;
+    height: 100px;
+    margin-left: 90px;
+    
+    
+  }
+  .lip{
+    width: 140px;
+    height: 100px;
+    margin-left: 120px;
+    
+  }
+
+  .cheekname{
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .cheekname1{
+    margin-left: 115px;
+  }
+
+  .cheekname2{
+    margin-left: 75px;
+  }
+  .nailname{
+    display: flex;
+    text-align: center;
+    margin-top: -55px;
+    margin-left: 375px;
+  }
+  .nailname3{
+    margin-left: 150px;
+  }
+  .nailname4{
+    margin-left: 80px;
+  }
+  .lipname{
+    display: flex;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 910px;
+  }
+  .lipname5{
+    margin-left: 45px;
+  }
+  .lipname6{
+    margin-left: 70px;
+  }
+.redline{
+    margin-left: 280px;
+    width: 750px;
+    margin-top: 80px;
+}
+.haircolor{
+    text-align: center;
+    font-size: 25px;
+    margin-top: -180px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.hairtop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 65px;
+    margin-top: 50px;
+    height: 350px;
+  }
+.hairnametop{
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .hair1{
+    margin-left: 150px;
+  }
+  .hair2{
+    margin-left: 215px;
+  }
+  .hair3{
+    margin-left: 210px;
+  }
+
+  .hairnamesita{
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .hair4{
+    margin-left: 150px;
+  }
+  .hair5{
+    margin-left: 215px;
+  }
+  .hair6{
+    margin-left: 180px;
+  }
+.niau{
+    text-align: center;
+    font-size: 25px;
+    margin-top: -340px;
+    margin-left: 80px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.niji{
+    margin-left: 330px;
+    width: 650px;
+    margin-top: -20px;
+}
+.niauen{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 110px 0px 110px;
+}
+
+.niau1{
+    margin-left: 100px;
+    margin-top: 25px;
+}
+.niau2{
+    margin-left: 305px;
+    margin-top: -28px;
+}
+.niau3{
+    margin-left: 470px;
+    margin-top: -28px;
+}
+.niau4{
+    margin-left: 694px;
+    margin-top: -28px;
+}
+.niau5{
+    margin-left: 855px;
+    margin-top: -28px;
+}
+.niau6{
+    margin-left: 1050px;
+    margin-top: -28px;
+}
+.niau7{
+    margin-left: 95px;
+    margin-top: 25px;
+}
+.niau8{
+    margin-left: 313px;
+    margin-top: -28px;
+}
+.niau9{
+    margin-left: 510px;
+    margin-top: -28px;
+}
+.niau10{
+    margin-left: 670px;
+    margin-top: -28px;
+}
+.niau11{
+    margin-left: 850px;
+    margin-top: -28px;
+}
+.niau12{
+    margin-left: 1065px;
+    margin-top: -28px;
+}
+.niawanaien{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 110px 0px 110px;
+}
+.nia1{
+    margin-left: 110px;
+    margin-top: 25px;
+}
+.nia2{
+    margin-left: 300px;
+    margin-top: -28px;
+}
+.nia3{
+    margin-left: 515px;
+    margin-top: -28px;
+}
+.nia4{
+    margin-left: 655px;
+    margin-top: -28px;
+}
+.nia5{
+    margin-left: 870px;
+    margin-top: -28px;
+}
+.nia6{
+    margin-left: 1070px;
+    margin-top: -28px;
+}
+.nia7{
+    margin-left: 110px;
+    margin-top: 25px;
+}
+.nia8{
+    margin-left: 280px;
+    margin-top: -28px;
+}
+.nia9{
+    margin-left: 510px;
+    margin-top: -28px;
+}
+.nia10{
+    margin-left: 670px;
+    margin-top: -28px;
+}
+.nia11{
+    margin-left: 855px;
+    margin-top: -28px;
+}
+.nia12{
+    margin-left: 1080px;
+    margin-top: -28px;
+}
+.kokkakuhe{
+    margin-left: 900px;
+}
+
+.burunatutop{
+    width: 100%;
+}
+.burushindankekka{
+    margin-top: -230px;
+    margin-left: 760px;
+    font-size: 45px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.burutokutyo{
+    margin-top: -420px;
+    margin-left: 850px;
+    font-size: 40px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.burutokutyo span{
+  border-bottom: dotted 7px red;
+  }
+.aohukidasi{
+    margin-left: 530px;
+    width: 700px;
+}
+.burutaipu{
+    margin-left: 650px;
+    margin-top: -250px;
+    font-size: 30px;
+    font-size: 100px;
+    color: #a11fff;
+    font-family: "Monotype Corsiva";
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.burubesu{
+    margin-left: 750px;
+    font-size: 30px;
+    font-size: 55px;
+    margin-top: 5px;
+    color: #343434;
+    font-family: "游明朝";
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+    
+}
+.burunatu{
+    margin-left: 150px;
+    margin-top: -160px;
+    width: 400px;
+}
+.buruoomoji{
+    font-size: 40px;
+    margin-left: 100px;
+    color: #8585BA;
+    margin-top: 10px;
+    
+}
+.buruborder{
+	width: 1050px;
+    height: 1200px;
+    flex-shrink: 0;
+    border: 7px solid rgba(93, 45, 63, 0.78);
+    background: #B0E0E6;
+    margin-left: 110px;
+}
+.buruline{
+    margin-left: 260px;
+    width: 750px;
+    margin-top: 100px;
+}
+.burueyename{
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .burueyename1{
+    margin-left: 90px;
+  }
+  .burueyename2{
+    margin-left: 60px;
+  }
+  .burueyenameman{
+    display: flex;
+    text-align: center;
+    margin-top: -55px;
+    margin-left: 375px;
+  }
+  .burueyename3{
+    margin-left: 125px;
+  }
+  .burueyename4{
+    margin-left: 65px;
+  }
+  .burueyenamemmigi{
+    display: flex;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 910px;
+  }
+  .burueyename5{
+    margin-left: 40px;
+  }
+  .burueyename6{
+    margin-left: 65px;
+  }
+  .burucheekname{
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .burucheekname1{
+    margin-left: 80px;
+  }
+
+  .burucheekname2{
+    margin-left: 50px;
+  }
+  .burunailname{
+    display: flex;
+    text-align: center;
+    margin-top: -55px;
+    margin-left: 375px;
+  }
+  .burunailname3{
+    margin-left: 160px;
+  }
+  .burunailname4{
+    margin-left: 100px;
+  }
+  .burulipname{
+    display: flex;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 910px;
+  }
+  .burulipname5{
+    margin-left: 20px;
+  }
+  .burulipname6{
+    margin-left: 55px;
+  }
+  .buline{
+    margin-left: 280px;
+    width: 720px;
+    margin-top: 100px;
+}
+.buruhaircolor{
+    text-align: center;
+    font-size: 25px;
+    margin-top: -170px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+
+.buruhair3{
+    margin-left: 190px;
+  }
+.buruhair5{
+    margin-left: 250px;
+  }
+  .buruhair6{
+    margin-left: 200px;
+  }
+  .buruniau1{
+    margin-left: 95px;
+    margin-top: 25px;
+}
+.buruniau2{
+    margin-left: 315px;
+    margin-top: -28px;
+}
+.buruniau3{
+    margin-left: 470px;
+    margin-top: -28px;
+}
+.buruniau4{
+    margin-left: 700px;
+    margin-top: -28px;
+}
+.buruniau5{
+    margin-left: 865px;
+    margin-top: -28px;
+}
+.buruniau6{
+    margin-left: 1080px;
+    margin-top: -28px;
+}
+.buruniau7{
+    margin-left: 85px;
+    margin-top: 25px;
+}
+.buruniau8{
+    margin-left: 320px;
+    margin-top: -28px;
+}
+.buruniau9{
+    margin-left: 500px;
+    margin-top: -28px;
+}
+.buruniau10{
+    margin-left: 660px;
+    margin-top: -28px;
+}
+.buruniau11{
+    margin-left: 840px;
+    margin-top: -28px;
+}
+.buruniau12{
+    margin-left: 1055px;
+    margin-top: -28px;
+}
+.burunia1{
+    margin-left: 130px;
+    margin-top: 25px;
+}
+.burunia2{
+    margin-left: 280px;
+    margin-top: -28px;
+}
+.burunia3{
+    margin-left: 500px;
+    margin-top: -28px;
+}
+.burunia4{
+    margin-left: 700px;
+    margin-top: -28px;
+}
+.burunia5{
+    margin-left: 860px;
+    margin-top: -28px;
+}
+.burunia6{
+    margin-left: 1050px;
+    margin-top: -28px;
+}
+.burunia7{
+    margin-left: 130px;
+    margin-top: 25px;
+}
+.burunia8{
+    margin-left: 290px;
+    margin-top: -28px;
+}
+.burunia9{
+    margin-left: 490px;
+    margin-top: -28px;
+}
+.burunia10{
+    margin-left: 670px;
+    margin-top: -28px;
+}
+.burunia11{
+    margin-left: 880px;
+    margin-top: -28px;
+}
+.burunia12{
+    margin-left: 1070px;
+    margin-top: -28px;
+}
+.akitop{
+    width: 100%;
+}
+.akishindankekka{
+    margin-top: -230px;
+    margin-left: 690px;
+    font-size: 45px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.akitokutyo{
+    margin-top: -520px;
+    margin-left: 770px;
+    font-size: 40px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.akitokutyo span{
+  border-bottom: dotted 7px red;
+  }
+.akihukidasi{
+    margin-left: 470px;
+    width: 700px;
+}
+.akitaipu{
+    margin-left: 600px;
+    margin-top: -220px;
+    font-size: 30px;
+    font-size: 100px;
+    color: #ec5350;
+    font-family: "Monotype Corsiva";
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.akibesu{
+    margin-left: 660px;
+    font-size: 55px;
+    margin-top: 5px;
+    font-family: "游明朝";
+    color: #343434;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.iebeaki{
+    margin-left: 200px;
+    margin-top: -230px;
+    width: 330px;
+}
+.akioomoji{
+    font-size: 40px;
+    margin-left: 100px;
+    color: #BD6856;
+    margin-top: 10px;
+}
+.akiborder{
+	width: 1050px;
+    height: 1200px;
+    flex-shrink: 0;
+    border: 7px solid rgba(138, 194, 107, 0.78);
+    background: #F4EADC;
+    margin-left: 110px;
+}
+.tutiline{
+    margin-left: 260px;
+    width: 750px;
+    margin-top: 100px;
+}
+.akieyename{
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .akieyename1{
+    margin-left: 90px;
+  }
+  .akieyename2{
+    margin-left: 60px;
+  }
+  .akieyenameman{
+    display: flex;
+    text-align: center;
+    margin-top: -55px;
+    margin-left: 375px;
+  }
+  .akieyename3{
+    margin-left: 150px;
+  }
+  .akieyename4{
+    margin-left: 80px;
+  }
+  .akieyenamemmigi{
+    display: flex;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 910px;
+  }
+  .akieyename5{
+    margin-left: 50px;
+  }
+  .akieyename6{
+    margin-left: 55px;
+  }
+  .akicheekname{
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .akicheekname1{
+    margin-left: 90px;
+  }
+
+  .akicheekname2{
+    margin-left: 60px;
+  }
+  .akinailname{
+    display: flex;
+    text-align: center;
+    margin-top: -55px;
+    margin-left: 375px;
+  }
+  .akinailname3{
+    margin-left: 150px;
+  }
+  .akinailname4{
+    margin-left: 80px;
+  }
+  .akilipname{
+    display: flex;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 910px;
+  }
+  .akilipname5{
+    margin-left: 40px;
+  }
+  .akilipname6{
+    margin-left: 60px;
+  }
+  .greenline{
+    margin-left: 280px;
+    width: 720px;
+    margin-top: 70px;
+}
+.akihaircolor{
+    text-align: center;
+    font-size: 25px;
+    margin-top: -160px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.akihair1{
+    margin-left: 170px;
+  }
+  .akihair2{
+    margin-left: 260px;
+  }
+.akihair3{
+    margin-left: 190px;
+  }
+.buruhair5{
+    margin-left: 250px;
+  }
+  .akihair6{
+    margin-left: 220px;
+  }
+  
+.akiniau2{
+    margin-left: 310px;
+    margin-top: -28px;
+}
+.akiniau3{
+    margin-left: 480px;
+    margin-top: -28px;
+}
+.akiniau4{
+    margin-left: 690px;
+    margin-top: -28px;
+}
+.akiniau5{
+    margin-left: 865px;
+    margin-top: -28px;
+}
+.akiniau6{
+    margin-left: 1040px;
+    margin-top: -28px;
+}
+.akiniau7{
+    margin-left: 85px;
+    margin-top: 25px;
+}
+.akiniau8{
+    margin-left: 320px;
+    margin-top: -28px;
+}
+.akiniau9{
+    margin-left: 505px;
+    margin-top: -28px;
+}
+.akiniau10{
+    margin-left: 660px;
+    margin-top: -28px;
+}
+.akiniau11{
+    margin-left: 880px;
+    margin-top: -28px;
+}
+.akiniau12{
+    margin-left: 1065px;
+    margin-top: -28px;
+}
+.akinia1{
+    margin-left: 110px;
+    margin-top: 25px;
+}
+.akinia2{
+    margin-left: 300px;
+    margin-top: -28px;
+}
+.akinia3{
+    margin-left: 510px;
+    margin-top: -28px;
+}
+.akinia4{
+    margin-left: 690px;
+    margin-top: -28px;
+}
+.akinia5{
+    margin-left: 890px;
+    margin-top: -28px;
+}
+.akinia6{
+    margin-left: 1070px;
+    margin-top: -28px;
+}
+.akinia7{
+    margin-left: 110px;
+    margin-top: 25px;
+}
+.akinia8{
+    margin-left: 280px;
+    margin-top: -28px;
+}
+.akinia9{
+    margin-left: 510px;
+    margin-top: -28px;
+}
+.akinia10{
+    margin-left: 670px;
+    margin-top: -28px;
+}
+.akinia11{
+    margin-left: 850px;
+    margin-top: -28px;
+}
+.akinia12{
+    margin-left: 1050px;
+    margin-top: -28px;
+}
+.huyutop{
+    width: 100%;
+}
+.huyushindankekka{
+    margin-top: -400px;
+    margin-left: 690px;
+    font-size: 45px;
+
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.huyutokutyo{
+    margin-top: -480px;
+    margin-left: 770px;
+    font-size: 40px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.huyutokutyo span{
+  border-bottom: dotted 7px red;
+  }
+.huyuhukidasi{
+    margin-left: 520px;
+    width: 630px;
+    margin-top: 1px;
+}
+.huyutaipu{
+    margin-left: 600px;
+    margin-top: -260px;
+    font-size: 30px;
+    font-size: 100px;
+    color: #0007d9;
+    font-family: "Monotype Corsiva";
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.huyubesu{
+    margin-left: 680px;
+    font-size: 30px;
+    font-size: 55px;
+    margin-top: 10px;
+    font-family: "游明朝";
+    color: #343434;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.burubehuyu{
+    margin-left: 130px;
+    margin-top: -290px;
+    width: 430px;
+}
+.huyuoomoji{
+    font-size: 40px;
+    margin-left: 100px;
+    color: #8E1147;
+    margin-top: 10px;
+}
+.huyuborder{
+	width: 1050px;
+    height: 1200px;
+    flex-shrink: 0;
+    border: 7px solid rgba(142, 17, 71, 0.78);
+    background: #FFE9FC;
+    margin-left: 110px;
+}
+.muraline{
+    margin-left: 260px;
+    width: 750px;
+    margin-top: 100px;
+}
+.huyueyename{
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .huyueyename1{
+    margin-left: 100px;
+  }
+  .huyueyename2{
+    margin-left: 70px;
+  }
+  .huyueyenameman{
+    display: flex;
+    text-align: center;
+    margin-top: -55px;
+    margin-left: 375px;
+  }
+  .huyueyename3{
+    margin-left: 160px;
+  }
+  .huyueyename4{
+    margin-left: 90px;
+  }
+  .huyueyenamemmigi{
+    display: flex;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 910px;
+  }
+  .huyueyename5{
+    margin-left: 40px;
+  }
+  .huyueyename6{
+    margin-left: 76px;
+  }
+  .huyucheekname{
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .huyucheekname1{
+    margin-left: 110px;
+  }
+
+  .huyucheekname2{
+    margin-left: 90px;
+  }
+  .huyunailname{
+    display: flex;
+    text-align: center;
+    margin-top: -55px;
+    margin-left: 375px;
+  }
+  .huyunailname3{
+    margin-left: 160px;
+  }
+  .huyunailname4{
+    margin-left: 90px;
+  }
+  .huyulipname{
+    display: flex;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 910px;
+  }
+  .huyulipname5{
+    margin-left: 60px;
+  }
+  .huyulipname6{
+    margin-left: 80px;
+  }
+  .piline{
+    margin-left: 280px;
+    width: 720px;
+    margin-top: 70px;
+}
+.huyuhaircolor{
+    text-align: center;
+    font-size: 25px;
+    margin-top: -160px;
+}
+.huyuhair1{
+    margin-left: 150px;
+  }
+  .huyuhair2{
+    margin-left: 250px;
+  }
+.huyuhair3{
+    margin-left: 220px;
+  }
+.huyuhair4{
+    margin-left: 180px;
+}
+.huyuhair5{
+    margin-left: 300px;
+  }
+  .huyuhair6{
+    margin-left: 270px;
+  }
+  .huyuniau1{
+    margin-left: 120px;
+    margin-top: 25px;
+}
+
+.huyuniau2{
+    margin-left: 320px;
+    margin-top: -28px;
+}
+.huyuniau3{
+    margin-left: 480px;
+    margin-top: -28px;
+}
+.huyuniau4{
+    margin-left: 690px;
+    margin-top: -28px;
+}
+.huyuniau5{
+    margin-left: 865px;
+    margin-top: -28px;
+}
+.huyuniau6{
+    margin-left: 1040px;
+    margin-top: -28px;
+}
+.huyuniau7{
+    margin-left: 120px;
+    margin-top: 25px;
+}
+.huyuniau8{
+    margin-left: 300px;
+    margin-top: -28px;
+}
+.huyuniau9{
+    margin-left: 515px;
+    margin-top: -28px;
+}
+.huyuniau10{
+    margin-left: 690px;
+    margin-top: -28px;
+}
+.huyuniau11{
+    margin-left: 880px;
+    margin-top: -28px;
+}
+.huyuniau12{
+    margin-left: 1075px;
+    margin-top: -28px;
+}
+.huyunia1{
+    margin-left: 100px;
+    margin-top: 25px;
+}
+.huyunia2{
+    margin-left: 290px;
+    margin-top: -28px;
+}
+.huyunia3{
+    margin-left: 510px;
+    margin-top: -28px;
+}
+.huyunia4{
+    margin-left: 660px;
+    margin-top: -28px;
+}
+.huyunia5{
+    margin-left: 840px;
+    margin-top: -28px;
+}
+.huyunia6{
+    margin-left: 1070px;
+    margin-top: -28px;
+}
+.huyunia7{
+    margin-left: 100px;
+    margin-top: 25px;
+}
+.huyunia8{
+    margin-left: 310px;
+    margin-top: -28px;
+}
+.huyunia9{
+    margin-left: 500px;
+    margin-top: -28px;
+}
+.huyunia10{
+    margin-left: 680px;
+    margin-top: -28px;
+}
+.huyunia11{
+    margin-left: 850px;
+    margin-top: -28px;
+}
+.huyunia12{
+    margin-left: 1070px;
+    margin-top: -28px;
+}
+
+.haruhuku{
+  margin-left: 150px;
+  margin-top: -170px;
+  width: 31%;
+  object-fit: cover;
+}
+
+.haruosusumekode{
+  margin-top: -390px;
+  margin-left: 700px;
+  font-size: 40px;
+  text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.haruosusumekode span{
+  border-bottom: dotted 7px red;
+  }
+.broline{
+  width:85%;
+  margin-left: 100px;
+}
+.haruniauhukuoomoji{
+  font-size: 40px;
+  margin-left: 100px;
+  color: #F69C5E;
+  margin-top: 10px;
+  
+}
+
+.haruniauhukukomoji{
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: -40px;
+  margin-bottom: -10px;
+  color: #444444;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+.haruniauhukukomoji span{
+  border-bottom: dashed 3px #ff0800;
+  color: #ff66fc;
+
+}
+
+.haruhukuphoto{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 65px;
+  margin-top: 30px;
+  height: 350px;
+}
+.haruhukunametop{
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 60px;
+}
+.haruhukuname1{
+  margin-left: 150px;
+}
+.haruhukuname2{
+  margin-left: 265px;
+}
+.haruhukuname3{
+  margin-left: 230px;
+}
+
+.haruhukunamesita{
+  display: flex;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.haruhukuname4{
+  margin-left: 150px;
+}
+.haruhukuname5{
+  margin-left: 220px;
+}
+.haruhukuname6{
+  margin-left: 220px;
+}
+.natuhuku{
+  margin-left: 150px;
+  margin-top: -205px;
+  width: 31%;
+  object-fit: cover;
+}
+
+.natuosusumekode{
+  margin-top: -360px;
+  margin-left: 750px;
+  font-size: 40px;
+  text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.natuosusumekode span{
+  border-bottom: dotted 7px red;
+  }
+.broline{
+  width:85%;
+  margin-left: 100px;
+}
+.natuniauhukuoomoji{
+  font-size: 40px;
+  margin-left: 100px;
+  color: #8585BA;
+  margin-top: 10px;
+}
+
+.natuniauhukukomoji{
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: -40px;
+  margin-bottom: -10px;
+  color: #444444;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+.natuniauhukukomoji span{
+  border-bottom: dashed 3px #ff0800;
+  color: #0c918f;
+}
+
+.natuhukuphoto{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 65px;
+  margin-top: 30px;
+  height: 350px;
+}
+.natuhukunametop{
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+.natuhukuname1{
+  margin-left: 150px;
+}
+.natuhukuname2{
+  margin-left: 265px;
+}
+.natuhukuname3{
+  margin-left: 250px;
+}
+
+.natuhukunamesita{
+  display: flex;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.natuhukuname4{
+  margin-left: 150px;
+}
+.natuhukuname5{
+  margin-left: 260px;
+}
+.natuhukuname6{
+  margin-left: 240px;
+}
+.akihuku{
+  margin-left: 110px;
+  margin-top: -205px;
+  width: 31%;
+  object-fit: cover;
+}
+
+.akiosusumekode{
+  margin-top: -350px;
+  margin-left: 685px;
+  font-size: 40px;
+  text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.akiosusumekode span{
+  border-bottom: dotted 7px red;
+  }
+.broline{
+  width:85%;
+  margin-left: 100px;
+}
+.akiniauhukuoomoji{
+  font-size: 40px;
+  margin-left: 100px;
+  color: #BD6856;
+  margin-top: 10px;
+
+}
+
+.akiniauhukukomoji{
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: -40px;
+  margin-bottom: -10px;
+  color: #444444;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+.akiniauhukukomoji span{
+  border-bottom: dashed #ff0800; 
+  color: #cf7900;
+}
+.akihukuphoto{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 65px;
+  margin-top: 30px;
+  height: 350px;
+}
+.akihukunametop{
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+.akihukuname1{
+  margin-left: 170px;
+}
+.akihukuname2{
+  margin-left: 245px;
+}
+.akihukuname3{
+  margin-left: 280px;
+}
+
+.akihukunamesita{
+  display: flex;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.akihukuname4{
+  margin-left: 130px;
+}
+.akihukuname5{
+  margin-left: 280px;
+}
+.akihukuname6{
+  margin-left: 310px;
+}
+.huyuhuku{
+  margin-left: 110px;
+  margin-top: -160px;
+  width: 29%;
+  object-fit: cover;
+}
+
+.huyuosusumekode{
+  margin-top: -400px;
+  margin-left: 690px;
+  font-size: 40px;
+  text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.huyuosusumekode span{
+  border-bottom: dotted 7px red;
+  }
+.broline{
+  width:85%;
+  margin-left: 100px;
+}
+.huyuniauhukuoomoji{
+  font-size: 40px;
+  margin-left: 100px;
+  color: #8E1147;
+  margin-top: 10px;
+}
+
+.huyuniauhukukomoji{
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: -40px;
+  margin-bottom: -10px;
+  color: #444444;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+.huyuniauhukukomoji span{
+  border-bottom: dashed #ff0800;
+  color: #1D2088;
+}
+.huyuhukuphoto{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 65px;
+  margin-top: 30px;
+  height: 350px;
+}
+.huyuhukunametop{
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 40px;
+}
+.huyuhukuname1{
+  margin-left: 170px;
+}
+.huyuhukuname2{
+  margin-left: 315px;
+}
+.huyuhukuname3{
+  margin-left: 320px;
+}
+
+.huyuhukunamesita{
+  display: flex;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+  margin-left: 80px;
+}
+.huyuhukuname4{
+  margin-left: 130px;
+}
+.huyuhukuname5{
+  margin-left: 320px;
+}
+.huyuhukuname6{
+  margin-left: 250px;
+}
+
+.osusumekodehakotirakara {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 50px;
+  color: #799dec;
+  text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
+}
+.osusumekodehakotirakara:active {
+  top: 4px;
+  text-shadow: none;
+}
+.osusumekodehakotirakara a{
+  color: #799dec;
+}
+.osusumekodehakotirakara a:hover {
+  color: #799dec;
+}
+.tokutyonimodoru {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 50px;
+  color: #799dec;
+  text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
+}
+.tokutyonimodoru:active {
+  top: 4px;
+  text-shadow: none;
+}
+.tokutyonimodoru a{
+  color: #799dec;
+}
+.tokutyonimodoru a:hover {
+  color: #799dec;
+}
+
+.rinkmatome{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 80px 60px 80px;
+}
+.kokkakusindannhakotirakara{
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  background: #ffc596;
+  border-radius: 0 15px 15px 0;
+  transition: .4s;
+  font-size: 35px;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+.kokkakusindannhakotirakara:hover {
+  background: #ffd1f6;
+}
+.kokkakusindannhakotirakara a{
+  color: black;
+  text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.kokkakusindannhakotirakara a:hover {
+  color: #3838ff;
+  text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #74a0ff, 0px 2px 0px #82a8ff, 0px 3px 0px #acc6ff;
+}
+
+
+.mouitido{
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  background: #ADD8E6;
+  border-radius: 0 15px 15px 0;
+  transition: .4s;
+  margin-left: -40px;
+  font-size: 35px;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+.mouitido:hover {
+  background: #ffe9a0;
+}
+.mouitido a{
+  color: black;
+  text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.mouitido a:hover {
+  color: #fe72ac;
+  text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #ffacf3, 0px 2px 0px #ffb5b5, 0px 3px 0px #d2e0ff;
+}
+.homepagehe{
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  background: #ade6b1;
+  border-radius: 0 15px 15px 0;
+  transition: .4s;
+  font-size: 35px;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+.homepagehe:hover {
+  background: #d3bcff;
+}
+.homepagehe a{
+  color: black;
+  text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.homepagehe a:hover {
+  color: rgb(255, 67, 89);
+  text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #d7ffd8, 0px 2px 0px #ffd1d1, 0px 3px 0px #cdddff;
 }

@@ -1,30 +1,826 @@
 // Place all the styles related to the colors controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-* {
-    margin: 0;
-    padding: 0;
+.kokakupagetopback{
+    height: 100px;
+    background-image: url("shapes.webp");
+    background-size: cover;
+    height: 100vh;
+    width:100%;
 }
-.ai{
-    font-size: 100px;
+.kokakupagetopmoji {
+    margin-top: -40px;
+	font-size:30px;
+    font-family: "Monotype Corsiva";
+	text-align:center;
+	line-height:2.95em;
+	font-weight:bold;
+	color: transparent;
+	background: linear-gradient( 45deg,
+		#E60012 20%,
+		#F39800 30%,
+		#FFF100 40%,
+		#009944 50%,
+		#0068B7 60%,
+		#1D2088 70%,
+		#920783 80%);
+	-webkit-background-clip: text;
+}
+.kokakupagetopnihongo{
+    
+    font-size:50px;
+    text-align:center;
+    text-decoration: none;
+  font-weight: bold;
+  font-family: "游明朝";
+  color: #343538;
+  text-shadow: 0px 2px 0px #b9b9b9, 0px 4px 0px #ababab, 0px 6px 0px #a0a0a0;
+}
+
+.kokakupagetopnihongo{
+    position: relative;
+    display: inline-block;
+    padding: 0 430px;
+  }
+  
+.kokakupagetopnihongo:before, .kokakupagetopnihongo:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 275px;
+    height: 15px;
+    border-top: solid 3px #444444;
+    border-bottom: solid 3px #444444;
+  }
+  
+  .kokakupagetopnihongo:before {
+    left: 0;
+    margin-left: 120px;
+  }
+  .kokakupagetopnihongo:after {
+    right: 0;
+    margin-right: 120px;
+  }
+
+.toptop{
+    display: flex;
+    height: 332px;
+}
+.topsutosuto{
+    width: 421px;
+}
+.topwawa{
+    width: 421px;
+}
+.topnana{
+    width: 421px;
+}
+
+.sindanzumi{
+    font-size: 20px;
+    margin-left: 710px;
+    margin-top: 10px;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+    color: #444444;
+}
+.shinhtlink{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.shstart{
     text-align: center;
-}
-
-.ai1{
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    background: #ff5c5c;/*ボタン色*/
+    border-bottom: solid 4px #a43634;
+    border-radius: 3px;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+  .shstart:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
+  .shstart a{
+    color: black;
+  }
+  .shstart a:hover {
+    color: rgb(255, 255, 255);
+  }
+  .sutopagehe{
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    background: #ACCEEA;/*ボタン色*/
+    border-bottom: solid 4px #748c9f;
+    border-radius: 3px;
+    font-size: 30px;
+    margin-left: 160px;
+  }
+  .sutopagehe:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
+ 
+  .sutopagehe a{
+    color: black;
+  }
+  .sutopagehe a:hover {
+    color: #0007d9;
+  }
+  .wavepagehe{
     text-align: center;
-   
-}
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    background: #FFE3E8;/*ボタン色*/
+    border-bottom: solid 4px #a79497;
+    border-radius: 3px;
+    font-size: 30px;
+  }
+  .wavepagehe:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
+  .wavepagehe a{
+    color: black;
+  }
+  .wavepagehe a:hover {
+    color: rgb(255, 38, 241);
+  }
+  .napagehe{
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    background: #BFDED8;/*ボタン色*/
+    border-bottom: solid 4px #6f827f;
+    border-radius: 3px;
+    font-size: 30px;
+  }
+  .napagehe:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
+ 
+  .napagehe a{
+    color: black;
+  }
+  .napagehe a:hover {
+    color: rgb(42, 134, 79);
+  }
 
 
-.back{
+
+
+.bg_skew_dot{
+    height: 100px;
+    background-image: url("shapes.webp");
+    background-size: cover;
+    height: 100vh;
+    width:100%;
+  }
+.sh{
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-    
-.ba{
-    height: 100px
-
+.shitu{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 170px;
+    font-family: "游明朝";
 }
+.yes{
+    text-align: center;
+    margin-left: 410px;
+    margin-right: 130px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #ec5350;/*ボタン色*/
+    border-bottom: solid 4px #a43634;
+    border-radius: 3px;
+    font-size: 40px;
+  }
+  .yes:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
+  .no{
+    margin-right: 80px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    font-size: 40px;
+  }
+  .no:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
+  .yes a{
+    color: black;
+  }
+  .yes a:hover {
+    color: white;
+  }
+  .no a{
+    color: black;
+  }
+  .no a:hover {
+    color: white;
+  }
+
+.sutobackground{
+    background-color: #D5DBD1;
+}
+
+.suto{
+    margin-left: 150px;
+    margin-top: 1px;
+    width: 445px;
+}
+
+.sutoshindankekka{
+    margin-top: -520px;
+    margin-left: 780px;
+    font-size: 45px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.sutotokutyo{
+    margin-top: 1px;
+    margin-left: 870px;
+    font-size: 40px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.sutotokutyo span{
+  border-bottom: dotted 7px red;
+  }
+.sutotaipu{
+    margin-left: 740px;
+    margin-top: -140px;
+    font-size: 80px;
+    color: rgb(137, 0, 0);
+    font-family: "Monotype Corsiva";
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.sutohuki{
+    margin-top: 1px;
+    width: 40%;
+    height: 10%;
+    margin-left: 660px;
+}
+.sutotoku{
+    margin-left: 760px;
+    margin-top: 80px;
+  text-align: center;
+  width: 25%;
+  padding: 10px;
+  font-size: 30px; 
+  border-radius: 2px; 
+  border: 5px solid #8E1147; 
+}
+
+.kuro{
+    width:85%;
+    margin-left: 100px;
+}
+.sutooomoji{
+    font-size: 40px;
+    margin-left: 100px;
+    color: #8E1147;
+    margin-top: 10px;
+}
+
+.sutokomoji{
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: -40px;
+    margin-bottom: -10px;
+    color: #343434;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+.sutokomoji span{
+    border-bottom: dashed #ff0800;
+    color: #630099;
+}
+.sutohairtop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 65px;
+    margin-top: 40px;
+    height: 500px;
+    
+  }
+.sutoname1{
+    margin-left: 210px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.sutoname2{
+    margin-left: 610px;
+    font-size: 30px;
+    margin-top: -35px;
+}
+.sutoname3{
+    margin-left: 1020px;
+    font-size: 30px;
+    margin-top: -35px;
+}
+.sutoname4{
+    margin-left: 210px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.sutoname5{
+    margin-left: 610px;
+    font-size: 30px;
+    margin-top: -35px;
+}
+.sutoname6{
+    margin-left: 1020px;
+    font-size: 30px;
+    margin-top: -35px;
+}
+
+.wavebackground{
+    background-color: #FDEFEE;
+}
+
+.wave{
+    margin-left: 150px;
+    margin-top: 1px;
+    width: 427px;
+}
+
+.waveshindankekka{
+    margin-top: -520px;
+    margin-left: 780px;
+    font-size: 45px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.wavetokutyo{
+    margin-top: 1px;
+    margin-left: 870px;
+    font-size: 40px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.wavetokutyo span{
+  border-bottom: dotted 7px red;
+  }
+.wavetaipu{
+    margin-left: 760px;
+    margin-top: -140px;
+    font-size: 80px;
+    font-family: "Monotype Corsiva";
+    color: rgb(0, 91, 0);
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.wavehuki{
+    margin-top: 1px;
+    width: 40%;
+    height: 10%;
+    margin-left: 660px;
+}
+.wavetoku{
+    margin-left: 760px;
+    margin-top: 80px;
+  text-align: center;
+  width: 25%;
+  padding: 10px;
+  font-size: 30px; 
+  border-radius: 2px; 
+  border: 5px solid #5C7142; 
+  
+}
+.waveoomoji{
+    font-size: 40px;
+    margin-left: 100px;
+    color: #5C7142;
+    margin-top: 10px;
+}
+.wavekomoji{
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: -40px;
+    margin-bottom: -10px;
+    color: #343434;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+.wavekomoji span{
+    border-bottom: dashed #ff0800;
+    color: #630099;
+}
+.wavename4{
+    margin-left: 170px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.wavename6{
+    margin-left: 1000px;
+    font-size: 30px;
+    margin-top: -35px;
+}
+.nabackground{
+    background-color: #F0EDDE;
+}
+
+.na{
+    margin-left: 150px;
+    margin-top: 1px;
+    width: 450px;
+}
+
+.nashindankekka{
+    margin-top: -520px;
+    margin-left: 780px;
+    font-size: 45px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.natokutyo{
+    margin-top: 1px;
+    margin-left: 870px;
+    font-size: 40px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.natokutyo span{
+  border-bottom: dotted 7px red;
+  }
+.nataipu{
+    margin-left: 760px;
+    margin-top: -140px;
+    font-size: 80px;
+    font-family: "Monotype Corsiva";
+    color: #0007d9;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.sutohuki{
+    margin-top: 1px;
+    width: 40%;
+    height: 10%;
+    margin-left: 660px;
+}
+.natoku{
+    margin-left: 760px;
+    margin-top: 80px;
+  text-align: center;
+  width: 25%;
+  padding: 10px;
+  font-size: 30px; 
+  border-radius: 2px; 
+  border: 5px solid #339; 
+}
+.naoomoji{
+    font-size: 40px;
+    margin-left: 100px;
+    color: #339;
+    margin-top: 10px;
+}
+.naname4{
+    margin-left: 180px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.naname5{
+    margin-left: 590px;
+    font-size: 30px;
+    margin-top: -35px;
+}
+
+.naname6{
+    margin-left: 1020px;
+    font-size: 30px;
+    margin-top: -35px;
+}
+
+
+.sutohuku{
+    margin-left: 150px;
+    margin-top: -20px;
+    width: 500px;
+}
+
+
+.sutoosusumekode{
+    margin-top: 1px;
+    margin-left: 770px;
+    font-size: 40px;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+}
+.sutoosusumekode span{
+  border-bottom: dotted 7px red;
+  }
+.hukusutohuki{
+    margin-top: 1px;
+    width: 40%;
+    height: 10%;
+    margin-left: 660px;
+}
+.hukusutotoku{
+    margin-left: 760px;
+    margin-top: 70px;
+  text-align: center;
+  width: 25%;
+  padding: 10px;
+  font-size: 30px; 
+  border-radius: 2px; 
+  border: 5px solid #8E1147; 
+}
+.sutohukuphoto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 65px;
+    margin-top: 40px;
+    height: 380px;
+    
+  }
+  .sutohukunametop{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    justify-content: space-around;
+    margin-left: 50px;
+   
+  }
+  .sutohukuname1{
+   
+  }
+  .sutohukuname2{
+    
+  }
+  .sutohukuname3{
+   margin-left: 20px;
+  }
+  
+  .sutohukunamesita{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 50px;
+    justify-content: space-around;
+  }
+  .sutohukuname4{
+  }
+  .sutohukuname5{
+    margin-left: -30px;
+  }
+  .sutohukuname6{
+    
+  }
+  .wavehuku{
+    margin-left: 150px;
+    margin-top: -20px;
+    width: 540px;
+}
+
+.hukuwaveshindankekka{
+    margin-top: -520px;
+    margin-left: 750px;
+    font-size: 45px;
+}
+.waveosusumekode{
+    margin-top: 1px;
+    margin-left: 770px;
+    font-size: 40px;
+}
+
+.hukuwavetaipu{
+    margin-left: 740px;
+    margin-top: -140px;
+    font-size: 80px;
+    font-family: "Monotype Corsiva";
+}
+.hukuwavehuki{
+    margin-top: 1px;
+    width: 40%;
+    height: 10%;
+    margin-left: 660px;
+}
+.hukuwavetoku{
+    margin-left: 760px;
+    margin-top: 60px;
+  text-align: center;
+  width: 25%;
+  padding: 10px;
+  font-size: 30px; 
+  border-radius: 2px; 
+  border: 5px solid #5C7142; 
+}
+.waveoomoji{
+    font-size: 40px;
+    margin-left: 100px;
+    color: #5C7142;
+    margin-top: 10px;
+}
+.wavehukuphoto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 65px;
+    margin-top: 40px;
+    height: 380px;
+    
+  }
+  .wavehukunametop{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    justify-content: space-around;
+    margin-left: 60px;
+   
+  }
+  .wavehukuname1{
+   
+  }
+  .wavehukuname2{
+    margin-left: 40px;
+  }
+  .wavehukuname3{
+   margin-left: 20px;
+  }
+  
+  .wavehukunamesita{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 50px;
+    justify-content: space-around;
+  }
+  .wavehukuname4{
+  }
+  .wavehukuname5{
+    margin-left: -30px;
+  }
+  .wavehukuname6{
+    
+  }
+.naturalhuku{
+    margin-left: 150px;
+    margin-top: -10px;
+    width: 550px;
+}
+
+.naturalosusumekode{
+    margin-top: 1px;
+    margin-left: 770px;
+    font-size: 40px;
+}
+
+.naturaloomoji{
+    font-size: 40px;
+    margin-left: 100px;
+    color: #339;
+    margin-top: 10px;
+}
+.naturalhukuphoto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 65px;
+    margin-top: 40px;
+    height: 380px;
+    
+  }
+  .naturalhukunametop{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    justify-content: space-around;
+    margin-left: 70px;
+   
+  }
+  .naturalhukuname1{
+   
+  }
+  .naturalhukuname2{
+    margin-left: 40px;
+  }
+  .naturalhukuname3{
+   margin-left: 20px;
+  }
+  
+  .naturalhukunamesita{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 30px;
+    justify-content: space-around;
+  }
+  .naturalhukuname4{
+  }
+  .naturalhukuname5{
+    margin-left: 50px;
+  }
+  .naturalhukuname6{
+    margin-left: 70px;
+  }
+
+.honerinkmatome{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 80px 0px 80px;
+}
+
+  .colorhakotirakara{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    background: #ffc596;
+    border-radius: 0 15px 15px 0;
+    transition: .4s;
+    font-size: 30px;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  }
+  
+  .colorhakotirakara:hover {
+    background: #ffd1f6;
+  }
+  .colorhakotirakara a{
+    color: black;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+  }
+  .colorhakotirakara a:hover {
+    color: #3838ff;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #74a0ff, 0px 2px 0px #82a8ff, 0px 3px 0px #acc6ff;
+  }
+  .honemouitido{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    background: #ADD8E6;
+    border-radius: 0 15px 15px 0;
+    transition: .4s;
+    margin-left: -40px;
+    font-size: 30px;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  }
+  
+  .honemouitido:hover {
+    background: #ffe9a0;
+  }
+  .honemouitido a{
+    color: black;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+  }
+  .honemouitido a:hover {
+    color: #fe72ac;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #ffacf3, 0px 2px 0px #ffb5b5, 0px 3px 0px #d2e0ff;
+  }
+  .honehomepagehe{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    background: #ade6b1;
+    border-radius: 0 15px 15px 0;
+    transition: .4s;
+    font-size: 30px;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  }
+  
+  .honehomepagehe:hover {
+    background: #d3bcff;
+  }
+  .honehomepagehe a{
+    color: black;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #b0b0b0, 0px 2px 0px #b7b1b1, 0px 3px 0px #808080;
+  }
+  .honehomepagehe a:hover {
+    color: rgb(255, 67, 89);
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #d7ffd8, 0px 2px 0px #ffd1d1, 0px 3px 0px #cdddff;
+  }

@@ -1,2 +1,151 @@
-診断結果
-ウェーブ
+<div class="wavebackground">
+  <%=image_tag 'wave.jpg',class:'wave'%>
+  <div class="waveshindankekka">
+          <h3>診 断 結 果<h3>
+  </div>
+  <div class="wavetokutyo">
+           <h4><span>特 徴</span><h4>
+  </div>
+  <%=image_tag 'sutohuki.png',class:'sutohuki'%>
+  <div class="wavetaipu">
+    Wave type
+  </div>
+  
+  <div class="wavetoku">
+           <h5>下重心でなだらかな<br>
+           ボディラインが特徴<h5>
+  </div>
+  <br>
+  <br>
+ <br>
+  <%=image_tag 'kuro.png',class:'kuro'%><br>
+
+         <div class="waveoomoji">
+           <h4>上半身<h4><br>
+         </div>
+
+         <div class="wavekomoji">
+           <h5>・首は細くて長く、鎖骨は細く目立ちやすい。<br>
+           ・肩まわりは薄くて華奢である。<br>
+           ・胸元は薄く、バストトップは低め。<h5><br>
+         </div>
+
+     <%=image_tag 'kuro.png',class:'kuro'%><br>
+
+        <div class="waveoomoji">
+           <h4>下半身<h4><br>
+        </div>
+
+        <div class="wavekomoji">
+        <h5>・ヒップの位置が低く、下向きにプリッとしている。<br>
+        ・太ももは横に張り出している。<br>
+        ・膝下に肉が付きやすく、足首にメリハリがない。<h5><br>
+        </div>
+
+        <%=image_tag 'kuro.png',class:'kuro'%><br>
+         <div class="waveoomoji">
+            <h4>肌、手<h4><br>
+         </div>
+
+          <div class="wavekomoji">
+            <h5>・白魚のような細く華奢な手をしている。<br>
+            ・手のひらは厚みがなく、肌はふんわりと柔らかい。<br>
+            ・身長の割に手が大きめの傾向がある。<h5><br>
+          </div>
+
+          <%=image_tag 'kuro.png',class:'kuro'%><br>
+         <div class="waveoomoji">
+            <h4>太り方<h4><br>
+         </div>
+
+          <div class="wavekomoji">
+            <h5><span>下腹部やお尻のまわり</span>に脂肪がつきやすいことが特徴。多少体重が増えたとしても上半身は<br>華奢なままで、くびれも残るため、<span>太ったことが周囲に気づかれにくい。</span><br><br>
+            ・下腹部やお尻がたるむ。<br>
+            ・太ももにボリュームが出る。<br>
+            ・二の腕の下側の部分が太って、たるみや揺れが出る。<h5><br>
+          </div>
+
+          <%=image_tag 'kuro.png',class:'kuro'%><br>
+         <div class="waveoomoji">
+            <h4>ダイエット方法<h4><br>
+         </div>
+
+          <div class="wavekomoji">
+            <h5>筋肉がつきにくく、脂肪が燃焼しにくいため、<span>下半身や脚やせに効く筋トレ</span>に<span>有酸素運動</span>を<br>合わせることがポイント。<br>
+          <br>
+          <span><運動></span><br>
+          有酸素運動：30分程度の速足ウォーキング(※走らない)<br>
+          <br>
+          <span><筋トレ></span><br>
+          足パカ：脚をパカパカと動かして、閉じたり開いたりするダイエット法<br>
+          ワイドスクワット：おしりを鍛えられる、足を開いて行うスクワット<h5><br>
+          </div>
+
+          <%=image_tag 'kuro.png',class:'kuro'%>
+
+          <div class="waveoomoji">
+            <h4>骨格ウェーブの芸能人<h4>
+         </div>
+
+         <div class="sutohairtop">
+          <%=image_tag 'sutoha.png',class:'sutoha'%><br>
+          <%=image_tag 'minami.png',class:'minami'%><br>
+          <%=image_tag 'kasiyuki.png',class:'kasiyuki'%><br>
+         </div>
+
+         <div class="sutoname1">
+         <h5>波留<h5>
+         </div>
+
+         <div class="sutoname2">
+         <h5>浜辺美波<h5>
+         </div>
+
+         <div class="sutoname3">
+         <h5>柏木由紀<h5>
+         </div>
+        <br>
+         <div class="sutohairtop">
+          <%=image_tag 'tanaka.png',class:'tanaka'%><br>
+          <%=image_tag 'mirei.png',class:'mirei'%><br>
+          <%=image_tag 'ayame.png',class:'ayame'%><br>
+         </div>
+
+         <div class="wavename4">
+         <h5>田中みな実<h5>
+         </div>
+
+         <div class="sutoname5">
+         <h5>桐谷美玲<h5>
+         </div>
+
+         <div class="wavename6">
+         <h5>剛力彩芽<h5>
+         </div>
+
+         <br>
+         <br>
+         <br>
+         <br>
+         <div class="osusumekodehakotirakara">
+            <%= link_to "おすすめコーデはこちら", shapes_cloth_2_path %>
+         </div>
+         <br>
+         <br>
+         <div class="honerinkmatome">
+              <div class="colorhakotirakara">
+                  <%= link_to "パーソナルカラー診断はこちら", colors_path %>
+              </div>
+              <br>
+                <div class="honemouitido">
+                   <%= link_to "もう一度診断する", shapes_path %>
+                </div>
+         
+               <div class="honehomepagehe">
+                   <%= link_to "ホームページに戻る", tops_top_path %>
+               </div>
+         </div>
+         <br><br><br>
+</div>
+
+
